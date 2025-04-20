@@ -18,9 +18,26 @@ nav ul {
     
   }
   
-  nav ul li a:hover {
-    text-decoration:double underline;
+  nav ul li a {
+    display: inline-block;               
+    transition: 
+    transform 0.3s ease;
+    color: 0.3s ease;
+    text-shadow: 0.3s ease;      
+             
   }
+  
+  nav ul li a:hover {
+    transform: perspective(400px) rotateY(30deg); 
+    color: magenta; /* hover szín */
+    text-shadow: 
+    0 0 5px magenta,
+    0 0 10px magenta,
+    0 0 20px magenta,
+    0 0 30px magenta;
+    
+  }
+  
   body {
     background-image: url('images/background.jpg');
     background-size: cover;
