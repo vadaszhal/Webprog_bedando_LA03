@@ -1,73 +1,94 @@
 nav ul {
-    list-style: none;
-    background-color: none;
-    text-align: center;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    
-  }
-  
-  nav ul li a {
-    display: inline-block;               
-    transition: 
+  list-style: none;
+  background-color: none;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+
+}
+
+nav ul li a {
+  display: inline-block;
+  transition:
     transform 0.3s ease;
-    color: 0.3s ease;
-    text-shadow: 0.3s ease;      
-             
-  }
-  
-  nav ul li a:hover {
-    transform: perspective(400px) rotateY(30deg); 
-    color: magenta; /* hover szín */
-    text-shadow: 
+  color: 0.3s ease;
+  text-shadow: 0.3s ease;
+
+}
+
+nav ul li a:hover {
+  transform: perspective(400px) rotateY(30deg);
+  color: magenta;
+  /* hover szín */
+  text-shadow:
     0 0 5px magenta,
     0 0 10px magenta,
     0 0 20px magenta,
     0 0 30px magenta;
-    
-  }
-  
-  body {
-    background-image: url('images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: white; /* hogy jól látszódjon a szöveg */
-  }
-  section.intro{
-    text-align: center;
-    font-size: 22px;
-    
-  }
-  section.content{
-    text-align: center;
-    font-size: 22px;
-  }
-  section.content1{
-    text-align: center;
-    font-size: 22px;
-  }
-  section.content2{
-    text-align: center;
-    font-size: 22px;
-  }
-  footer{
-    
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    
-  }
- 
+
+}
+
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+
+}
+
+section.intro {
+  text-align: center;
+  font-size: 22px;
+
+}
+
+section.content {
+  text-align: center;
+  font-size: 22px;
+}
+
+section.content1 {
+  text-align: center;
+  font-size: 22px;
+}
+
+section.content2 {
+  text-align: center;
+  font-size: 22px;
+}
+
+div.HoldSzoveg{
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+div.MarsSzoveg{
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+div.Venus{
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+footer {
+
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+
+}
