@@ -6,6 +6,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     var email = document.getElementById('email').value.trim();
     var telefonszam = document.getElementById('telefonszam').value.trim();
     var urhajo = document.getElementById('urhajo').value.trim();
+    var kuldetes = document.getElementById('kuldetes').value.trim();
  
   
     var errorMessage = document.getElementById('errorMessage');
@@ -36,6 +37,10 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     }
     if (urhajo.length < 10) {
       errorMessage.textContent = "Az űrhajó mező legalább 10 karakter hosszúnak kell lennie!";
+      return;
+    }
+    if (kuldetes.length < 10) {
+      errorMessage.textContent = "A küldetés mező legalább 10 karakter hosszúnak kell lennie!";
       return;
     }
     
