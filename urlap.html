@@ -33,29 +33,20 @@
             </div>
             <div>
                 <label for="telefonszam">Telefonszám:</label><br>
-                <input type="text" id="telefonszam" name="telefonszam" required><br><br>
+                <input type="text" id="telefonszam" name="telefonszam" required placeholder="Pl:36201234567"><br><br>
             </div>
-            <div>
-                <label for="mission">Válaszd ki a küldetést:</label><br>
-                <select id="mission" name="mission">
-                    <option value="" disabled selected hidden>Válasszon</option>
-                    <option value="hold">Hold-felfedező</option>
-                    <option value="mars">A Vörös Bolygó titkai</option>
-                    <option value="Venus">Aurelia Venus küldetés</option>
-                </select><br><br>
-            </div>
+           
             <div>
                 <label for="urhajo">A választott űrhajó:</label><br>
                 <input type="text" id="urhajo" name="urhajo" required><br><br>
             </div>
-            <div>
-                <label for="terms"></label><br>
-                <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">Elfogadom a jelentkezési feltételeket</label><br><br>
-            </div>
+            
             <button type="submit">Jelentkezés</button>
+            <div id="errorMessage" style="color: red; margin-top: 1em;"></div> <br>
+            <div id="successMessage" style="color: green; margin-top: 1em;"></div> <br>
         </form>
     </main>
+    <script src="js/urlap.js"></script>
     <footer>
         <p>&copy; 2025 Galaxis Expedíció. Minden jog fenntartva.</p>
         <p>Kapcsolat: Fidesz János </p>
