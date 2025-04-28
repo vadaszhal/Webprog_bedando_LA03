@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelentkezés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="kuldetesek.html">Űrexpedíciók</a></li>
+                <li><a href="urhajok.html">Űrhajók</a></li>
+                <li><a href="galeria.html">Galéria</a></li>
+                <li><a href="urlap.html">Jelentkezés</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align: center;">Jelentkezési Űrlap</h1>
+        <form id="contactForm" style="text-align: center;">
+            <div>
+                <label for="name">Név:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+            <div>
+                <label for="telefonszam">Telefonszám:</label><br>
+                <input type="text" id="telefonszam" name="telefonszam" required><br><br>
+            </div>
+            <div>
+                <label for="mission">Válaszd ki a küldetést:</label><br>
+                <select id="mission" name="mission">
+                    <option value="" disabled selected hidden>Válasszon</option>
+                    <option value="hold">Hold-felfedező</option>
+                    <option value="mars">A Vörös Bolygó titkai</option>
+                    <option value="Venus">Aurelia Venus küldetés</option>
+                </select><br><br>
+            </div>
+            <div>
+                <label for="urhajo">A választott űrhajó:</label><br>
+                <input type="text" id="urhajo" name="urhajo" required><br><br>
+            </div>
+            <div>
+                <label for="terms"></label><br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Elfogadom a jelentkezési feltételeket</label><br><br>
+            </div>
+            <button type="submit">Jelentkezés</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Galaxis Expedíció. Minden jog fenntartva.</p>
+        <p>Kapcsolat: Fidesz János </p>
+    </footer>
+</body>
+
+</html>
